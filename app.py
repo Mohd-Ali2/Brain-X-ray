@@ -8,7 +8,7 @@ with open("cnn.json", "r") as json_file:
     loaded_model_json = json_file.read()
     
 loaded_model = model_from_json(loaded_model_json)
-#loaded_model.load_weights('model_weights.weights.h5')
+loaded_model.load_weights('model_weights.weights.h5')
 
 def predict(image_file):
     test_image = Image.open(image_file)
